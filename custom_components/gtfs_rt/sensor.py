@@ -174,7 +174,7 @@ class PublicTransportData(object):
         if api_key is not None:
             self._headers = {'Authorization': api_key}
         elif x_api_key is not None:
-            self._headers = {'x-api-key': x_api_key}
+            self._headers = {'x-access-token': x_api_key}
         else:
             self._headers = None
         self.info = {}
